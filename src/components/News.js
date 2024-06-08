@@ -6,7 +6,7 @@ import Spinner from './Spinner';
 
 export default class News extends Component {
   static defaultProps = {
-    pageSize: 5, // default page size to 5
+    pageSize: 5, 
     country: "in",
     category: "general"
   };
@@ -32,7 +32,7 @@ export default class News extends Component {
       page: 1,
       totalResults: 0
     };
-    document.title = `${this.capatalizeFirstLetter(this.props.category)} - NewsMonkey`;
+    document.title = `${this.capatalizeFirstLetter(this.props.category)} - NewsApp`;
   }
 
   async updateNews() {
